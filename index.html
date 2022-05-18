@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resetstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST" id="registration">
+        <h2 class="heading"> Personal Registration</h2>
+
+        <div class="form-blocks">
+            <label for="firstname" class="form-title"> First Name*</label>
+            <input type="text" name=firstname class="firstname" id="firstname" placeholder="first name">
+            <span class="error-text" id="error_firstname"></span>
+        </div>
+
+        <div class="form-blocks">
+            <label for="lastname" class="form-title"> Last Name*</label>
+            <input type="text" name=lastname class="lastname" id="lastname" placeholder="last name">
+            <span class="error-text" id="error_lastname"></span>
+        </div>
+        <h3 class="heading2"> Please select your age </h3>
+        <div>
+            <input type="radio" name="age" id="age1">
+            <label for="age1"> 18-25</label>
+            <input type="radio" name="age" id="age2">
+            <label for="age2"> 25-35</label>
+            <input type="radio" name="age" id="age3">
+            <label for="age3"> 35-50</label>
+            <Span class="error-text" id="error_age"></Span>
+        </div>
+
+        <div>
+            <label class="form-title" for="text"> Description*</label>
+            <textarea class="input-field" name="text" id="text" placeholder="Descibe yourself..."></textarea>
+            <span class="error-text" id="error_text"></span>
+        </div>
+
+        <h3 class="heading"> Register Today</h3>
+        <div class="form-blocks">
+            <label for="address" class="form-title"> Enter your email address*</label>
+            <input type="text" name=address class="address" id="address" placeholder="address" onkeydown="validation()">
+            <span class="error-text" id="error_address"></span>
+        </div>
+        <div class="form-blocks">
+            <label for="Password" class="form-title"> Enter your password* </label>
+
+            <input type="password" name=Password class="Password" id="Password" placeholder="Password">
+            <i id="toggleIcon" class="fa-regular fa-eye"></i>
+            <span class="error-text" id="error_Password"></span>
+        </div>
+        <div class="form-blocks">
+            <label for="Password2" class="form-title"> Repeat your password*</label>
+            <input type="password" name=Password2 class="Password2" id="Password2" placeholder="repeat pasword">
+            <i id="toggleIcon1" class="fa-regular fa-eye"></i>
+            <span class="error-text" id="error_Password2"></span>
+        </div>
+        <div class="form-blocks">
+            <label for="agree" class="form-title">I agree terms and conditions*</label>
+            <input type="checkbox" name=agree id="agree">
+            <span class="error-text" id="error_agree"></span>
+        </div>
+
+        <button type="submit" class="btn"> Send </button>
+    </form>
+
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
